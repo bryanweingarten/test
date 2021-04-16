@@ -15,7 +15,7 @@ jobs:
         os: [ubuntu-20.04, ubuntu-18.04]
         go: [ '1.16', '1.15' ]
 
-    name: Go ${{ matrix.go }} test
+    name: Go ${{ matrix.go }} on ${{ matrix.os }}
 
     steps:
     - uses: actions/checkout@v2
